@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "weatherwebapp"
+version = "0.1.0"
+description = ""
+authors = ["MarkCesium <danikhrenkov29@gmail.com>"]
+license = "MIT Licence"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.115.11"
+pydantic-settings = "^2.8.1"
+sqlalchemy = "^2.0.38"
+alembic = "^1.14.1"
+orjson = "^3.10.15"
+asyncpg = "^0.30.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[tool.mypy]
+disable_error_code = ["import-untyped"]
