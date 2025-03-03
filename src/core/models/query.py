@@ -15,5 +15,5 @@ class Query(Base):
     humidity: Mapped[int]
     wind_speed: Mapped[float]
     description: Mapped[str]
-    created_at: Mapped[datetime] = mapped_column(DateTime(True), default=datetime.now(timezone.utc))
+    created_at: Mapped[datetime] = mapped_column(DateTime(True), default=lambda: datetime.now(timezone.utc))
     
