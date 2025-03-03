@@ -1,7 +1,9 @@
 import aiohttp
 
 from src.core.config import settings
+
 from .schemas import WeatherResponse
+
 
 async def get_weather(city: str) -> WeatherResponse | None:
     async with aiohttp.ClientSession() as session:

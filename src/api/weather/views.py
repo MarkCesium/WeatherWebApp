@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
 
-from .service import get_weather
 from .schemas import WeatherResponse
+from .service import get_weather
 
 router = APIRouter(prefix="/weather")
 
